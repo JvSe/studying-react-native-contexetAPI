@@ -11,8 +11,8 @@ import UserContext from '../DispositvoContext';
 export default function App({ navigation }) {
   const theme = useContext(UserContext)
   return(
-      <View style={[styles.container, {backgroundColor: theme === 'escuro' ? '#333': '#FFF'}]}>
-          <Text>Estou na Home!</Text>
+      <View style={[styles.container, {backgroundColor: theme === 'escuro' ? '#000': '#FFF'}]}>
+          <Text style={[styles.text, {color: theme === 'escuro' ? '#fff': '#000'}]}>Estou na Home!</Text>
           <Button title="Perfil" onPress={() => navigation.navigate('Perfil')} />
       </View>
   )

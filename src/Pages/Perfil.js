@@ -12,7 +12,7 @@ export default function Home({ navigation }) {
   return(
       
       <View style={[styles.container, {backgroundColor: theme === 'escuro' ? '#333': '#FFF'}]}>
-          <Text style={styles.text}> Estou no Perfil!</Text>
+          <Text style={[styles.text, {color: theme === 'escuro' ? '#fff': '#000'}]}> Estou no Perfil!</Text>
           <Button title="Home" onPress={() => navigation.goBack()} />
       </View>
   )
